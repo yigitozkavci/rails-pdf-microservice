@@ -10,7 +10,7 @@ module API
 				requires :html_body, type: String, desc: 'Html to be parsed.'
 			end
 			post :convert do
-				"Converting html: #{params[:html_body]}"
+				"#{params[:html_body]}.pdf"
 			end
 		end
 	end
