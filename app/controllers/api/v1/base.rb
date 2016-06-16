@@ -7,10 +7,10 @@ module API
 
 			desc 'Converts html into pdf document.'
 			params do
-				requires :html_body, type: File, desc: 'Html to be parsed.'
+				requires :html_body, type: String, desc: 'Html to be parsed.'
 			end
 			post :convert do
-				"Converted pdf"
+				"Converting html: #{params[:html_body]}"
 			end
 		end
 	end

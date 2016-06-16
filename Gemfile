@@ -32,3 +32,6 @@ gem 'grape'
 
 # For API Documentation
 gem 'grape-swagger'
+
+# Enable CORS
+gem 'rack-cors', :require => 'rack/cors'
