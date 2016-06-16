@@ -5,13 +5,10 @@ module API
 			prefix :api
 			version :v1
 
-			desc 'Converts html into pdf document.'
-			params do
-				requires :html_body, type: String, desc: 'Html to be parsed.'
-			end
-			post :convert do
-				"#{params[:html_body]}.pdf"
-			end
+			mount API::V1::PDFConverter
+			add_swagger_documentation(
+				hide_documentation_path: true
+			)
 		end
 	end
 end
