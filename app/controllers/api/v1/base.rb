@@ -5,11 +5,6 @@ module API
 			prefix :api
 			version :v1
 
-
-			get :try do
-				"wow"
-			end
-			
 			desc 'Converts html into pdf document.'
 			params do
 				requires :html_body, type: String, desc: 'Html to be parsed.'
