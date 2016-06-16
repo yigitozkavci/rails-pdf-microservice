@@ -7,7 +7,8 @@ module API
 
 			mount API::V1::PDFConverter
 			add_swagger_documentation(
-				hide_documentation_path: true
+				hide_documentation_path: true,
+				base_path: '/'
 			)
 		end
 	end
